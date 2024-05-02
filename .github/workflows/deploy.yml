@@ -1,4 +1,4 @@
-name: Terraform CI CD Pipeline for Deploying AWS Resources-1
+name: Terraform CI CD Pipeline for Deploying AWS EC2 Resources
 run-name: ${{ github.actor }} has triggered the pipeline
 
 on:
@@ -11,7 +11,7 @@ env:
 
 jobs:
   build-infra:
-    name: terraform-ci-cd
+    name: terraform-ci-cd-ec2
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
