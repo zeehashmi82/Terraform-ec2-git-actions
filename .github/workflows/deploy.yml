@@ -21,16 +21,16 @@ jobs:
       - name: Terraform Init
         id: init
         run: terraform init
-        working-directory: ./Terraform-ec2-git-actions
+        working-directory: ./ec2-git
       - name: Terraform Validate
         id: validate
         run: terraform validate
-        working-directory: ./Terraform-ec2-git-actions
+        working-directory: ./ec2-git
       - name: Terraform Plan
         id: plan
         run: terraform plan
-        working-directory: ./Terraform-ec2-git-actions
+        working-directory: ./ec2-git
       - name: Terraform Apply
         id: apply
         run: terraform apply --auto-approve
-        working-directory: ./Terraform-ec2-git-actions
+        working-directory: ./ec2-git
